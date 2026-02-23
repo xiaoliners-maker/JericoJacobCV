@@ -371,3 +371,4 @@ document.querySelectorAll('.suggestion-chip').forEach(chip => {
   resetAuto()
 
 })()
+
