@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerico Jacob CV</title>
+  <meta name="description" content="Frontend Developer from Pangasinan, Philippines. Building modern web applications with React, TypeScript, and modern frameworks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="site-wrapper">
+
+  <!-- ── Sticky Nav ── -->
+  <nav class="sticky-nav" id="stickyNav" aria-label="Site navigation">
+    <a href="#" class="nav-owner" id="navOwner">Jerico</a>
+    <div class="nav-dots" role="list" aria-label="Page sections">
+      <a href="#about"           class="nav-dot-link" title="About"           aria-label="About">           <span class="nav-dot" data-section="about"></span></a>
+      <a href="#experience"      class="nav-dot-link" title="Experience"      aria-label="Experience">      <span class="nav-dot" data-section="experience"></span></a>
+      <a href="#tech"            class="nav-dot-link" title="Tech Stack"      aria-label="Tech Stack">      <span class="nav-dot" data-section="tech"></span></a>
+      <a href="#projects"        class="nav-dot-link" title="Projects"        aria-label="Projects">        <span class="nav-dot" data-section="projects"></span></a>
+      <a href="#certifications"  class="nav-dot-link" title="Certifications"  aria-label="Certifications"> <span class="nav-dot" data-section="certifications"></span></a>
+      <a href="#recommendations" class="nav-dot-link" title="Recommendations" aria-label="Recommendations"><span class="nav-dot" data-section="recommendations"></span></a>
+      <a href="#contact"         class="nav-dot-link" title="Contact"         aria-label="Contact">         <span class="nav-dot" data-section="contact"></span></a>
+      <a href="#gallery"         class="nav-dot-link" title="Gallery"         aria-label="Gallery">         <span class="nav-dot" data-section="gallery"></span></a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" type="button">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="avatar-wrap fade-in">
+      <div class="avatar-circle">
+        <img src="images/profile.jpg" alt="Jerico P. Jacob" class="img-original" draggable="false" />
+        <img src="images/shrek.jpg" alt="What are you doing in my swamp" class="img-shrek" draggable="false" />
+      </div>
+    </div>
+
+    <div class="reveal">
+      <h1 class="owner-name">Jerico P. Jacob</h1>
+    </div>
+    <p class="owner-location reveal delay-60">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Pangasinan, Philippines
+    </p>
+
+    <div class="role-pills reveal delay-100">
+      <span class="role-pill">Frontend Developer</span>
+      <span class="role-pill">Web Developer</span>
+    </div>
+
+    <a href="https://uep.edu.ph" target="_blank" rel="noopener noreferrer" class="badge-link reveal delay-120">
+      <span style="color:var(--dim);margin-top:2px;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+      </span>
+      <div>
+        <p class="badge-label">UEP</p>
+        <p class="badge-sub">University of Eastern Pangasinan · 2022-2026</p>
+      </div>
+      <span class="badge-arrow">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </span>
+    </a>
+
+    <div class="cta-buttons reveal delay-200">
+      <a href="https://calendly.com/xiaoliners" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Schedule a Call
+      </a>
+      <a href="mailto:xiaoliners@gmail.com" class="btn-secondary">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Send Email
+      </a>
+    </div>
+  </header>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <h2 class="section-label reveal">About</h2>
+    <div class="bio-wrap">
+      <span class="bio-quote-mark" aria-hidden="true">"</span>
+      <p class="bio-para reveal delay-100">
+        <span class="bio-lead">I'm a Frontend/Web Developer from Pangasinan, Philippines, specializing in building modern web applications and digital experiences.</span>
+        Using JavaScript, TypeScript, and modern frameworks.
+      </p>
+      <p class="bio-para reveal delay-200">I studied at the University of Eastern Pangasinan.</p>
+      <p class="bio-para reveal delay-300">Lately, I've been diving deeper into AI integration, building intelligent applications, and leveraging modern tooling to deliver fast, beautiful, and accessible products.</p>
+    </div>
+
+    <div class="divider-label reveal delay-400">
+      <div class="divider-line"></div>
+      <span class="divider-text">memberships</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="membership-list reveal delay-400">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="membership-link">
+        <span class="membership-dot" style="background:hsl(140,60%,55%);box-shadow:0 0 6px hsla(140,60%,55%,0.4);opacity:0.7"></span>
+        <span class="membership-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        Coming Soon
+        <span class="membership-arrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="membership-link">
+        <span class="membership-dot" style="background:hsl(180,60%,55%);box-shadow:0 0 6px hsla(180,60%,55%,0.4);opacity:0.7"></span>
+        <span class="membership-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        Coming Soon
+        <span class="membership-arrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience">
+    <h2 class="section-label reveal">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-spine" aria-hidden="true"></div>
+      <!-- Work -->
+      <div class="timeline-entry reveal delay-60">
+        <div class="timeline-node-col">
+          <div class="timeline-node" style="background:#60a5fa;box-shadow:0 0 8px #60a5fa55"></div>
+        </div>
+        <div class="timeline-content">
+          <div>
+            <div class="timeline-type" style="color:#60a5fa">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Work
+            </div>
+            <p class="timeline-role">Frontend Developer</p>
+            <p class="timeline-company">Freelance</p>
+          </div>
+          <span class="timeline-year">2026–Present</span>
+        </div>
+      </div>
+      <!-- Work -->
+      <div class="timeline-entry reveal delay-120">
+        <div class="timeline-node-col">
+          <div class="timeline-node" style="background:#60a5fa;box-shadow:0 0 8px #60a5fa55"></div>
+        </div>
+        <div class="timeline-content">
+          <div>
+            <div class="timeline-type" style="color:#60a5fa">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Work
+            </div>
+            <p class="timeline-role">Web Developer</p>
+            <p class="timeline-company">Freelance</p>
+          </div>
+          <span class="timeline-year">2023</span>
+        </div>
+      </div>
+      <!-- Education -->
+      <div class="timeline-entry reveal delay-200">
+        <div class="timeline-node-col">
+          <div class="timeline-node" style="background:#a78bfa;box-shadow:0 0 8px #a78bfa55"></div>
+        </div>
+        <div class="timeline-content">
+          <div>
+            <div class="timeline-type" style="color:#a78bfa">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              Education
+            </div>
+            <p class="timeline-role">BS Information Technology</p>
+            <p class="timeline-company">University of Eastern Pangasinan</p>
+          </div>
+          <span class="timeline-year">2022-2026</span>
+        </div>
+      </div>
+      <!-- Origin -->
+      <div class="timeline-entry reveal delay-300">
+        <div class="timeline-node-col">
+          <div class="timeline-node" style="background:#34d399;box-shadow:0 0 8px #34d39955"></div>
+        </div>
+        <div class="timeline-content">
+          <div>
+            <div class="timeline-type" style="color:#34d399">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Origin
+            </div>
+            <p class="timeline-role">Hello World! 👋</p>
+            <p class="timeline-company">Wrote my first line of code</p>
+          </div>
+          <span class="timeline-year">2018</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tech Stack ── -->
+  <section id="tech">
+    <div class="section-header reveal">
+      <h2 class="section-label" style="margin:0">Tech Stack</h2>
+      <span class="tech-count">11 technologies</span>
+    </div>
+
+    <!-- Frontend -->
+    <div class="tech-category reveal delay-100">
+      <div class="tech-cat-header">
+        <span class="tech-cat-icon" style="background:rgba(96,165,250,0.1);color:#60a5fa">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </span>
+        <span class="tech-cat-name" style="color:#60a5fa">Frontend</span>
+        <div class="tech-cat-rule"></div>
+        <span class="tech-cat-count">5</span>
+      </div>
+      <div class="tech-chips">
+        <span class="tech-chip" data-color="#f7df1e"><span class="tech-dot" style="background:#f7df1e;opacity:0.7;box-shadow:0 0 4px #f7df1e88"></span>JavaScript</span>
+        <span class="tech-chip" data-color="#e34c26"><span class="tech-dot" style="background:#e34c26;opacity:0.7;box-shadow:0 0 4px #e34c2688"></span>HTML</span>
+        <span class="tech-chip" data-color="#1572b6"><span class="tech-dot" style="background:#1572b6;opacity:0.7;box-shadow:0 0 4px #1572b688"></span>CSS</span>
+        <span class="tech-chip" data-color="#61dafb"><span class="tech-dot" style="background:#61dafb;opacity:0.7;box-shadow:0 0 4px #61dafb88"></span>React</span>
+        <span class="tech-chip" data-color="#38bdf8"><span class="tech-dot" style="background:#38bdf8;opacity:0.7;box-shadow:0 0 4px #38bdf888"></span>Tailwind CSS</span>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="tech-category reveal delay-200">
+      <div class="tech-cat-header">
+        <span class="tech-cat-icon" style="background:rgba(52,211,153,0.1);color:#34d399">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        </span>
+        <span class="tech-cat-name" style="color:#34d399">Backend</span>
+        <div class="tech-cat-rule"></div>
+        <span class="tech-cat-count">3</span>
+      </div>
+      <div class="tech-chips">
+        <span class="tech-chip" data-color="#4479a1"><span class="tech-dot" style="background:#4479a1;opacity:0.7;box-shadow:0 0 4px #4479a188"></span>MySQL</span>
+        <span class="tech-chip" data-color="#8892bf"><span class="tech-dot" style="background:#8892bf;opacity:0.7;box-shadow:0 0 4px #8892bf88"></span>PHP</span>
+        <span class="tech-chip" data-color="#ff2d20"><span class="tech-dot" style="background:#ff2d20;opacity:0.7;box-shadow:0 0 4px #ff2d2088"></span>Laravel</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="tech-category reveal delay-300">
+      <div class="tech-cat-header">
+        <span class="tech-cat-icon" style="background:rgba(245,158,11,0.1);color:#f59e0b">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <span class="tech-cat-name" style="color:#f59e0b">Tools &amp; DevOps</span>
+        <div class="tech-cat-rule"></div>
+        <span class="tech-cat-count">3</span>
+      </div>
+      <div class="tech-chips">
+        <span class="tech-chip" data-color="#f05032"><span class="tech-dot" style="background:#f05032;opacity:0.7;box-shadow:0 0 4px #f0503288"></span>Git</span>
+        <span class="tech-chip" data-color="#2088ff"><span class="tech-dot" style="background:#2088ff;opacity:0.7;box-shadow:0 0 4px #2088ff88"></span>GitHub Actions</span>
+        <span class="tech-chip" data-color="#007acc"><span class="tech-dot" style="background:#007acc;opacity:0.7;box-shadow:0 0 4px #007acc88"></span>VS Code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <h2 class="section-label" style="margin:0">Recent Projects</h2>
+      <div class="filter-toggle">
+        <button class="filter-btn active" data-filter="all" id="filterAll">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          all (4)
+        </button>
+        <button class="filter-btn" data-filter="featured" id="filterFeatured">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          featured (2)
+        </button>
+      </div>
+    </div>
+
+    <div class="projects-list" id="projectsList">
+      <!-- Project 1 -->
+      <div class="project-card reveal delay-60" data-featured="true" style="--hue:233">
+        <div class="project-top">
+          <div class="project-title-row">
+            <span class="project-folder" style="color:hsl(233,55%,62%)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="project-title">Responsive Portfolio Website</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-featured" style="color:hsl(233,60%,68%);border-color:hsla(233,50%,60%,0.3);background:hsla(233,50%,60%,0.08)">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              featured
+            </span>
+          </div>
+        </div>
+        <p class="project-desc">A personal portfolio website built with React and Tailwind CSS, showcasing projects, experience, and skills with a clean, responsive design.</p>
+        <div class="project-footer">
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>React</span>
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Tailwind</span>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card reveal delay-120" data-featured="false" style="--hue:41">
+        <div class="project-top">
+          <div class="project-title-row">
+            <span class="project-folder" style="color:hsl(41,55%,62%)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="project-title">Inventory Management System</h3>
+          </div>
+          <div class="project-badges"></div>
+        </div>
+        <p class="project-desc">A system built with C# and MS Access for academic use, allowing users to track and manage inventory with item categorization, stock level monitoring, and reporting.</p>
+        <div class="project-footer">
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>C#</span>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card reveal delay-200" data-featured="false" style="--hue:304">
+        <div class="project-top">
+          <div class="project-title-row">
+            <span class="project-folder" style="color:hsl(304,55%,62%)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="project-title">Shoe E-commerce Platform</h3>
+          </div>
+          <div class="project-badges"></div>
+        </div>
+        <p class="project-desc">Shoe e-commerce built with JavaScript, HTML, and CSS for academic use, featuring product listings, shopping cart functionality, and a simple checkout process.</p>
+        <div class="project-footer">
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>JavaScript</span>
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>HTML</span>
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>CSS</span>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card reveal delay-300" data-featured="true" style="--hue:150">
+        <div class="project-top">
+          <div class="project-title-row">
+            <span class="project-folder" style="color:hsl(150,55%,62%)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="project-title">School Portal &amp; Enrollment System</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-featured" style="color:hsl(150,60%,68%);border-color:hsla(150,50%,60%,0.3);background:hsla(150,50%,60%,0.08)">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              featured
+            </span>
+          </div>
+        </div>
+        <p class="project-desc">Built with PHP and MySQL for academic use, providing a platform for students and faculty to access academic resources, manage enrollments, and facilitate communication.</p>
+        <div class="project-footer">
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>PHP</span>
+          <span class="stack-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>MySQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Certifications ── -->
+  <section id="certifications">
+    <div class="section-header reveal">
+      <h2 class="section-label" style="margin:0">Recent Certifications</h2>
+    </div>
+    <div class="cert-grid">
+      <a href="#" class="cert-card reveal delay-60"><p class="cert-name">Coming Soon</p><p class="cert-issuer">Coming Soon</p></a>
+      <a href="#" class="cert-card reveal delay-120"><p class="cert-name">Coming Soon</p><p class="cert-issuer">Coming Soon</p></a>
+      <a href="#" class="cert-card reveal delay-200"><p class="cert-name">Coming Soon</p><p class="cert-issuer">Coming Soon</p></a>
+      <a href="#" class="cert-card reveal delay-300"><p class="cert-name">Coming Soon</p><p class="cert-issuer">Coming Soon</p></a>
+    </div>
+  </section>
+
+  <!-- ── Recommendations ── -->
+  <section id="recommendations">
+    <h2 class="section-label reveal">Recommendations</h2>
+    <div id="recList">
+      <div class="rec-card reveal delay-60">
+        <div class="rec-quote-box">"Coming Soon"</div>
+        <div class="rec-footer">
+          <div class="rec-avatar">CS</div>
+          <div><p class="rec-author">Coming Soon</p><p class="rec-title">Coming Soon</p></div>
+        </div>
+      </div>
+      <div class="rec-card reveal delay-120">
+        <div class="rec-quote-box">"Coming Soon"</div>
+        <div class="rec-footer">
+          <div class="rec-avatar">CS</div>
+          <div><p class="rec-author">Coming Soon</p><p class="rec-title">Coming Soon</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-label" style="margin-bottom:16px">Social Links</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/jericojacob" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        <a href="https://github.com/jericojacob" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+        <a href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+      </div>
+    </div>
+
+    <div class="speaking-card reveal delay-100">
+      <p class="speaking-label">Speaking</p>
+      <p class="speaking-text">Available for speaking at events about software development, web technologies, and emerging tools.</p>
+      <a href="mailto:xiaoliners@gmail.com" class="speaking-cta">Get in touch →</a>
+    </div>
+
+    <div class="quick-links reveal delay-200">
+      <a href="mailto:xiaoliners@gmail.com" class="quick-link">
+        <p class="quick-link-label">Email</p>
+        <p class="quick-link-sub">xiaoliners@gmail.com</p>
+      </a>
+      <a href="https://calendly.com/xiaoliners" target="_blank" rel="noopener noreferrer" class="quick-link">
+        <p class="quick-link-label">Let's Talk</p>
+        <p class="quick-link-sub">Schedule a Call</p>
+      </a>
+      <a href="#" class="quick-link">
+        <p class="quick-link-label">Blog</p>
+        <p class="quick-link-sub">Coming soon</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Gallery ── -->
+  <section id="gallery">
+    <div class="section-header reveal">
+      <h2 class="section-label" style="margin:0">Gallery</h2>
+      <div class="gallery-controls">
+        <button class="gallery-ctrl-btn" id="galleryPrev" aria-label="Previous slide">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span class="gallery-counter" id="galleryCounter">1 / 6</span>
+        <button class="gallery-ctrl-btn" id="galleryNext" aria-label="Next slide">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="gallery-viewport reveal delay-60" id="galleryViewport">
+      <div class="gallery-track" id="galleryTrack">
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo1.jpg" alt="Gallery photo 1" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo2.jpg" alt="Gallery photo 2" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo3.jpg" alt="Gallery photo 3" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo4.jpg" alt="Gallery photo 4" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo5.jpg" alt="Gallery photo 5" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-slide">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/photo6.jpg" alt="Gallery photo 6" loading="lazy" />
+            <div class="gallery-overlay"><p class="gallery-caption">Caption goes here</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gallery-dots reveal delay-120" id="galleryDots"></div>
+
+    <div class="gallery-thumbs reveal delay-200" id="galleryThumbs">
+      <div class="gallery-thumb active" data-index="0"><img src="images/gallery/photo1.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-thumb" data-index="1"><img src="images/gallery/photo2.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-thumb" data-index="2"><img src="images/gallery/photo3.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-thumb" data-index="3"><img src="images/gallery/photo4.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-thumb" data-index="4"><img src="images/gallery/photo5.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-thumb" data-index="5"><img src="images/gallery/photo6.jpg" alt="" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p class="footer-copy">© <span id="footerYear"></span> Jerico P. Jacob. All rights reserved.</p>
+    <a href="mailto:xiaoliners@gmail.com" class="footer-chat">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      Chat with Jerico
+    </a>
+  </footer>
+
+</div><!-- /site-wrapper -->
+
+<!-- ── Chatbot ── -->
+<button class="chat-fab" id="chatFab" aria-label="Open chat">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <span class="chat-fab-badge" id="chatBadge"></span>
+</button>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-avatar">JJ</div>
+    <div>
+      <p class="chat-header-title">Ask about Jerico</p>
+      <div class="chat-header-status">
+        <span class="chat-status-dot"></span>
+        <span class="chat-status-text">Always online</span>
+      </div>
+    </div>
+    <button class="chat-close-btn" id="chatClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-suggestions" id="chatSuggestions">
+    <button class="suggestion-chip" data-q="Are you open to work?">Are you open to work?</button>
+    <button class="suggestion-chip" data-q="What technologies do you use?">What technologies do you use?</button>
+    <button class="suggestion-chip" data-q="Tell me about your projects">Tell me about your projects</button>
+    <button class="suggestion-chip" data-q="How can I contact you?">How can I contact you?</button>
+  </div>
+  <div class="chat-input-area">
+    <div class="chat-input-row">
+      <textarea class="chat-textarea" id="chatInput" placeholder="Ask me anything…" rows="1"></textarea>
+      <button class="chat-send-btn" id="chatSend" disabled aria-label="Send">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <p class="chat-footer-note">Smart assistant · always available</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
