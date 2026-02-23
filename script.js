@@ -4,8 +4,8 @@ const DATA = {
   email: 'xiaoliners@gmail.com',
   location: 'Pangasinan, Philippines',
   linkedin: 'https://linkedin.com/in/jericojacob',
-  github: 'https://github.com/jericojacob',
-  instagram: 'https://instagram.com/your_username',
+  github: 'https://github.com/xiaoliners-maker',
+  instagram: 'https://instagram.com/xiaokinggg_',
   facebook: 'https://facebook.com',
 }
 
@@ -369,4 +369,5 @@ document.querySelectorAll('.suggestion-chip').forEach(chip => {
 
   goTo(0, true)
   resetAuto()
+
 })()
